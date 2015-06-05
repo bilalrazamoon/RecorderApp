@@ -1,0 +1,315 @@
+
+/*fonts*/
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-BoldCondensed;
+    src: url(../fonts/Roboto-BoldCondensed.ttf);
+}
+@font-face {
+    font-family: Roboto-BoldCondensedItalic;
+    src: url(../fonts/Roboto-BoldCondensedItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Condensed;
+    src: url(../fonts/Roboto-Condensed.ttf);
+}
+@font-face {
+    font-family: Roboto-CondensedItalic;
+    src: url(../fonts/Roboto-CondensedItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(../fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url(../fonts/Roboto-ThinItalic.ttf);
+}
+/*animation*/
+@-webkit-keyframes zoomIn {
+    0%{}
+    100% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        -ms-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+}
+@keyframes zoomIn {
+    0%{}
+    100% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        -ms-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+}
+@-webkit-keyframes zoomIn2 {
+    0%{}
+    100% {
+        -webkit-transform: scale3d(.95, .95, .95);
+        -ms-transform: scale3d(.95, .95, .95);
+        transform: scale3d(.95 .95, .95);
+    }
+}
+@keyframes zoomIn2 {
+    0%{}
+    100% {
+        -webkit-transform: scale3d(.95, .95, .95);
+        -ms-transform: scale3d(.95, .95, .95);
+        transform: scale3d(.95 .95, .95);
+    }
+}
+/*circleContainer*/
+.circleContainer{
+    position: relative;
+    width: 100%;
+    top:10%;
+}
+.circle1{
+    background: transparent;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /*-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);*/
+}
+.circle1.active{
+    background: rgba(210,71,38, 0.5);
+}
+.circle2{
+    background: transparent;
+    position: absolute;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    top:50%;
+    left:50%;
+    margin: -100px 0px 0px -100px;
+    display: inline-block;
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /*-webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);*/
+}
+.circle2.active{
+    background: rgba(210,71,38, 0.5);
+}
+.micButton{
+    background: #000;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0px 0px -75px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+
+}
+.micButton:active, .micButton.active{
+    background: rgb(210,71,38);
+}
+.micIcon{
+    top: 50%;
+    color: #fff;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 700%;
+    margin: 25px 0px 0px 25px;
+    text-align: center;
+}
+body, .pane{
+    background: #222;
+}
+
+@media (min-device-width: 350px) {
+    .circle1 {
+        width: 275px;
+        height: 275px;
+    }
+    .circle2{
+        width: 300px;
+        height: 300px;
+        margin: -150px 0 0 -150px;
+    }
+    .micButton{
+        width: 240px;
+        height: 240px;
+        margin: -120px 0 0 -120px;
+    }
+    .micIcon{
+        width: 150px;
+        height: 150px;
+        font-size: 1000%;
+        margin: 45px 0 0 45px;
+    }
+}
+
+@media (min-device-width: 550px) {
+    .circle1 {
+        width: 360px;
+        height: 360px;
+    }
+    .circle2{
+        width: 400px;
+        height: 400px;
+        margin: -200px 0 0 -200px;
+    }
+    .micButton{
+        width: 300px;
+        height: 300px;
+        margin: -150px 0 0 -150px;
+    }
+    .micIcon{
+        width: 200px;
+        height: 200px;
+        font-size: 1400%;
+        margin: 50px 0 0 50px;
+    }
+}
+.bar-footer{
+    height: 88px;
+    background: #333;
+}
+.has-footer{
+    bottom: 88px;
+}
+.recList .item{
+    background-color: transparent;
+    border-color: transparent;
+}
+.recList .item h2,.recList .item p,.recList .item b{
+    color: #fff;
+}
+.recList .item p{
+    font-weight: bold;
+}
+.recList .item b{
+    position: absolute;
+    right: 15px;
+    top: 27px;
+}
+.recList .item.activated, .recList .item.active{
+    background-color: rgb(210,71,38);
+    -webkit-animation-name: zoomIn2;
+    -webkit-animation-duration: 0.3s;
+    animation-name: zoomIn2;
+    animation-duration: 0.3s;
+}
+.bar-footer .left{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+.bar-footer .right{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+.bar-footer .right div{
+    margin-left: 20px;
+}
+.bar-footer .ion{
+    border-radius: 50%;
+    width: 50px;
+    border: 2px solid #fff;
+    font-size: 26px;
+    color: #fff;
+}
+.ion-play,.ion-pause{
+    padding: 10px 17px;
+}
+.ion-trash-a{
+    padding: 10px 13px;
+}
+.ion-more{
+    padding: 10px 12px;
+}
+.bar-footer .ion.activated,.bar-footer .ion.active,.bar-footer .ion:active{
+    color: rgb(210,71,38);
+}
+.bar-player{
+    display: inline-block;
+    height: 4px;
+    background: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.bar-player div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: rgb(210,71,38);
+    height: 100%;
+    -webkit-transition: width .3s;
+    -ms-transition: width .3s;
+    -o-transition: width .3s ease;
+    transition: width .3s;
+}
+.timer{
+    text-align: center;
+    margin-top: 27%;
+    font-size: 350%;
+    color: #fff;
+    font-family: Roboto-Thin;
+}
+.rec_button{
+    text-align: center;
+    margin-top: 12%;
+}
+.rec_button button,.rec_button button.activated{
+    background: rgb(210,71,38);
+    border: 1px solid rgb(210,71,38);
+    color: #fff;
+    border-radius: 5px;
+}
+.rec_button button.activated{
+    background: rgb(255, 84, 49);
+    border-radius: 5px;
+}

@@ -1,0 +1,17 @@
+<ion-view>
+    <div class="circleContainer">
+        <div class="circle1" ng-class="{active:active}">
+        </div>
+        <div class="circle2" ng-class="{active:active}">
+        </div>
+        <div class="micButton" ng-class="{active:active}" ng-click="rec()">
+            <div class="micIcon" ng-class="{'ion-ios7-mic':!active,'ion-stop':active}"></div>
+        </div>
+    </div>
+    <div class="rec_status">
+        <div class="timer">{{timer}}</div>
+    </div>
+    <div class="rec_button">
+        <button class="button" ui-sref="recList">view recording</button>
+    </div>
+</ion-view>

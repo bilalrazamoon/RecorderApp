@@ -1,0 +1,26 @@
+<div class="recList">
+    <ion-view>
+        <ion-content class="has-footer">
+            <div class="list">
+                <a class="item" ng-repeat="item in items" ng-click="selectItem(item)"
+                   ng-class="{active:item==currentItem,animated:item==deletedItem,hingle:item==deletedItem}">
+                    <h2>{{item.title}}</h2>
+
+                    <p>{{item.date}}<b>{{item.duration}}</b></p>
+                </a>
+            </div>
+        </ion-content>
+        <ion-footer-bar>
+            <div class="bar-player">
+                <div style="width: {{currentPosition}}%"></div>
+            </div>
+            <div class="left">
+                <div class="ion" ng-class="{'ion-play':!active,'ion-pause':active}" ng-click="play()"></div>
+            </div>
+            <div class="right">
+                <div class="ion ion-trash-a" ng-click="deleteItem()"></div>
+                <!--<div class="ion ion-more" ng-click=""></div>-->
+            </div>
+        </ion-footer-bar>
+    </ion-view>
+</div>
